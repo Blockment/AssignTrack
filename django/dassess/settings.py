@@ -26,8 +26,9 @@ SECRET_KEY = '=p-_ersq$l!y=tf3lha@wkf^v89#g3vn#%e0jqtp__zttxqg7@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['193.176.240.206']
+CORS_ALLOWED_ORIGINS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'dassessment',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [

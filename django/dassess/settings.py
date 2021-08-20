@@ -27,8 +27,10 @@ SECRET_KEY = '=p-_ersq$l!y=tf3lha@wkf^v89#g3vn#%e0jqtp__zttxqg7@'
 DEBUG = True
 
 ALLOWED_HOSTS = ['193.176.240.206']
-CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
+    '193.176.240.206:8080'
+]
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',
     'http://193.176.240.206:8080',

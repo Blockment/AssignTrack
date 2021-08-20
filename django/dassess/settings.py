@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['193.176.240.206']
 
 CORS_ALLOWED_ORIGINS = [
-    '193.176.240.206:8080'
+    'http://193.176.240.206:8080'
 ]
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',

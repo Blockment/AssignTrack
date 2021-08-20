@@ -26,6 +26,6 @@ class Submission(models.Model):
 
 class Assessment(models.Model):
     username = models.ForeignKey(User, to_field="username", on_delete=models.DO_NOTHING, default="-1")
-    assignment_id = models.ForeignKey(Assignment, to_field="id", on_delete=models.DO_NOTHING, default="-1")
+    submission_id = models.ForeignKey(Submission, to_field="id", on_delete=models.DO_NOTHING, default="-1")
     date = models.DateTimeField("date") # auto ?
     score = models.DecimalField("score", max_digits=8, decimal_places=4)

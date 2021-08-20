@@ -31,12 +31,12 @@ class SubmissionSerializer(serializers.ModelSerializer):
 class AssessmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Assessment
-        fields = ["id", "assignment_id", "date", "score"]
+        fields = ["id", "submission_id", "date", "score"]
 
     def create(self, validated_data):
         assessment = Assessment.objects.create(
             username=self.context['request'].user,
-            assignment_id=validated_data['assignment_id'],
+            submission_id=validated_data['submission_id'],
             date=validated_data['date'],
             score=validated_data['score'],
         )

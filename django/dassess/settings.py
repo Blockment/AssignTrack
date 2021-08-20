@@ -35,6 +35,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',
     'http://193.176.240.206:8080',
 )
+CORS_ALLOW_CREDENTIALS = False
 
 # Application definition
 

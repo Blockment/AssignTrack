@@ -29,6 +29,11 @@ DEBUG = True
 ALLOWED_HOSTS = ['193.176.240.206']
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8080',
+    'http://193.176.240.206:8080',
+)
+
 # Application definition
 
 INSTALLED_APPS = [
